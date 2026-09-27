@@ -1,0 +1,24 @@
+[package]
+name = "scores-cli"
+description = "Command-line converter between music score formats"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[[bin]]
+name = "scores"
+path = "src/main.rs"
+
+[dependencies]
+clap = { workspace = true }
+scores-core = { workspace = true }
+scores-format-abc = { workspace = true }
+scores-format-chordpro = { workspace = true }
+scores-format-guitarpro = { workspace = true }
+scores-format-mei = { workspace = true }
+scores-format-midi = { workspace = true }
+scores-format-musescore = { workspace = true }
+scores-format-musicxml = { workspace = true }
+scores-format-primus = { workspace = true }
+scores-format-rtttl = { workspace = true }

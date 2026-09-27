@@ -1,0 +1,12 @@
+[package]
+name = "scores-format-musescore"
+description = "MuseScore (.mscz) plugin for scores-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[dependencies]
+guitarpro = "0.4"
+quick-xml = { workspace = true }
+scores-core = { workspace = true }

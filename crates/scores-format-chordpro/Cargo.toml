@@ -1,0 +1,11 @@
+[package]
+name = "scores-format-chordpro"
+description = "ChordPro plugin for scores-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[dependencies]
+chordpro = "0.3"
+scores-core = { workspace = true }

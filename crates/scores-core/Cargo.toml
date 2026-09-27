@@ -1,0 +1,10 @@
+[package]
+name = "scores-core"
+description = "Common data model and format traits shared by all scores crates"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[dependencies]
+thiserror = { workspace = true }

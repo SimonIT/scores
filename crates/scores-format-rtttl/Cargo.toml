@@ -1,0 +1,11 @@
+[package]
+name = "scores-format-rtttl"
+description = "RTTTL (ring tone text transfer language) plugin for scores-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[dependencies]
+rtttl = { version = "1.0", features = ["std"] }
+scores-core = { workspace = true }

@@ -1,0 +1,44 @@
+[workspace]
+resolver = "3"
+members = [
+  "crates/scores-core",
+  "crates/scores-format-musicxml",
+  "crates/scores-format-mei",
+  "crates/scores-format-midi",
+  "crates/scores-format-abc",
+  "crates/scores-format-rtttl",
+  "crates/scores-format-chordpro",
+  "crates/scores-format-guitarpro",
+  "crates/scores-format-musescore",
+  "crates/scores-format-primus",
+  "crates/scores-cli",
+  "crates/scores-web",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+repository = "https://github.com/SimonIT/scores"
+license = "MIT OR Apache-2.0"
+
+[workspace.dependencies]
+clap = { version = "4", features = ["derive"] }
+midly = "0.5"
+primus-scores = { git = "https://github.com/SimonIT/primus-scores.git" }
+quick-xml = "0.42"
+scores-core = { path = "crates/scores-core" }
+scores-format-abc = { path = "crates/scores-format-abc" }
+scores-format-chordpro = { path = "crates/scores-format-chordpro" }
+scores-format-guitarpro = { path = "crates/scores-format-guitarpro" }
+scores-format-mei = { path = "crates/scores-format-mei" }
+scores-format-midi = { path = "crates/scores-format-midi" }
+scores-format-musescore = { path = "crates/scores-format-musescore" }
+scores-format-musicxml = { path = "crates/scores-format-musicxml" }
+scores-format-primus = { path = "crates/scores-format-primus" }
+scores-format-rtttl = { path = "crates/scores-format-rtttl" }
+thiserror = "2"
+wasm-bindgen = "0.2"
+
+[profile.release]
+opt-level = "s"
+lto = true

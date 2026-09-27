@@ -1,0 +1,11 @@
+[package]
+name = "scores-format-abc"
+description = "ABC notation plugin for scores-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[dependencies]
+abc-parser = "0.4"
+scores-core = { workspace = true }

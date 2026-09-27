@@ -1,0 +1,11 @@
+[package]
+name = "scores-format-mei"
+description = "MEI (Music Encoding Initiative) plugin for scores-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[dependencies]
+quick-xml = { workspace = true }
+scores-core = { workspace = true }
